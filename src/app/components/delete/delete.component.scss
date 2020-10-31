@@ -1,0 +1,38 @@
+.outer{
+    .delete{
+        display: flex;
+        justify-content: center;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        .submit-btn{
+            width: 120px;
+            height: 40px;
+            color: white;
+            background-color: #3A86FF;
+           
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover{
+            opacity: 0.6;
+        }
+        .cancel-btn{
+            width: 120px;
+            height: 40px;
+            color: white;
+            background-color: #3A86FF;
+           
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .cancel-btn:hover{
+            opacity: 0.6;
+        }
+    }
+}

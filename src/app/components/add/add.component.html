@@ -1,0 +1,18 @@
+<div class="outer">
+    <form [formGroup]="addForm">
+        <mat-form-field class="form-input" hideRequiredMarker appearance="outline">
+            <mat-label>Title</mat-label>
+            <input type="text" matInput formControlName="strTitle">
+            <mat-error *ngIf="addForm.get('strTitle').hasError('required')">
+            Enter Title
+         </mat-error>
+        </mat-form-field><br><br>
+        <mat-form-field class="form-input" hideRequiredMarker appearance="outline">
+            <mat-label>Description</mat-label>
+            <textarea type="text" matInput formControlName="strDesc"></textarea>
+        </mat-form-field><br><br>
+        <div class="btn">
+            <button class="add-btn" [disabled]="!addForm.valid" (click)="addData()">Add</button>
+        </div>
+    </form>
+</div>

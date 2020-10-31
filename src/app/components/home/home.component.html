@@ -1,0 +1,26 @@
+<div class="outer">
+    <div class="add-section">
+        <button mat-button class="add-btn" (click)="add()">Add</button>
+    </div>
+    <div class="data-section">
+        <table>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+          <tr *ngFor="let list of list">
+              <td>{{list.id}}</td>
+              <td>{{list.title}}</td>
+              <td>{{list.description}}</td>
+              <td>
+                  <div class="action-icons">
+                      <mat-icon (click)="edit(list)">edit</mat-icon>
+                      <mat-icon (click)="delete(list)">delete</mat-icon>
+                  </div>
+              </td>
+          </tr>
+        </table>
+    </div>
+</div>
